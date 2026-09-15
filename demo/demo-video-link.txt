@@ -1,5 +1,5 @@
-Live Demo (frontend):
-https://cybersentinel-mocha.vercel.app/
+Live Demo (Unified Frontend & API):
+https://bob-ai-hackathod-xsquade.onrender.com/
 
-Live Demo (backend):
-https://cybersentinel-bqxe.onrender.com/
+API Docs:
+https://bob-ai-hackathod-xsquade.onrender.com/docs

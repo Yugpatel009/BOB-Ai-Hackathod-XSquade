@@ -21,8 +21,8 @@ team_members:
 
 demo:
   video_url: "https://youtu.be/example-cybersentinel-demo"
-  live_url: "https://cybersentinel-mocha.vercel.app/"
-  api_docs: "https://cybersentinel-bqxe.onrender.com/docs"
+  live_url: "https://bob-ai-hackathod-xsquade.onrender.com/"
+  api_docs: "https://bob-ai-hackathod-xsquade.onrender.com/docs"
 
 tech_stack:
   backend:

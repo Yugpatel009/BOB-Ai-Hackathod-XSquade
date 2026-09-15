@@ -67,9 +67,14 @@ async def global_exception_handler(request: Request, exc: Exception):
         content={"detail": "An internal error occurred in CyberSentinel SOC engine."}
     )
 
+STATIC_DIR = Path(__file__).resolve().parent.parent / "static"
+
 # Health & Root Check
 @app.get("/")
 def root_status():
+    index_file = STATIC_DIR / "index.html"
+    if STATIC_DIR.exists() and index_file.exists():
+        return FileResponse(str(index_file))
     return {
         "service": "CyberSentinel AI SOC Analyst",
         "status": "OPERATIONAL",
@@ -100,8 +105,6 @@ app.include_router(simulation_router, prefix="/api")
 # ── Serve Frontend Static Files (Production / Render) ────────────────
 # In production, the built React frontend is placed in backend/static/
 # The backend serves it directly — no separate frontend server needed.
-STATIC_DIR = Path(__file__).resolve().parent.parent / "static"
-
 if STATIC_DIR.exists() and STATIC_DIR.is_dir():
     # Mount static assets (JS, CSS, images)
     app.mount("/assets", StaticFiles(directory=str(STATIC_DIR / "assets")), name="static-assets")

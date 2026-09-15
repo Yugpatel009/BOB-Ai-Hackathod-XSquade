@@ -1,53 +1,63 @@
-# Hackathon Project Submission Metadata
-project_name: "CyberSentinel"
-tagline: "AI-Powered SOC Analyst — Autonomous Threat Detection, Correlation & Incident Response"
-team_name: "CyberSentinel AI"
-track: "AI / Cybersecurity"
+# =============================================================================
+# HACKATHON SUBMISSION METADATA
+# =============================================================================
+# Instructions:
+#   - Fill in ALL required fields (marked with # REQUIRED)
+#   - Optional fields can be left as empty strings ""
+#   - Do NOT rename this file — the evaluation pipeline reads it by name
+#   - Use double quotes around all string values
+# =============================================================================
 
-description: >
-  Autonomous Security Operations Center assistant that detects, correlates, investigates,
-  scores risk, and recommends prescriptive response actions for enterprise security incidents.
-
-team_members:
-  - name: "jenil Sakhiya"
-    role: "Team Lead"
+team:
+  name: "XSquade"
+  track: "AI"
+  lead:
+    name: "jenil Sakhiya"
     email: "25ce104@charusar.edu.in"
-  - name: "Daksh Patel"
-    role: "member"
-    email: "25dce035@charusar.edu.in"
-  - name: "yug kansagra"
-    role: "member"
-    email: "d26dce141@charusar.edu.in"
+  members:
+    - name: "Daksh Patel"
+      email: "25dce035@charusar.edu.in"
+    - name: "yug kansagra"
+      email: "d26dce141@charusar.edu.in"
+    
+submission:
+  title: "CyberSentinel"
 
-demo:
-  video_url: "https://youtu.be/example-cybersentinel-demo"
-  live_url: "https://bob-ai-hackathod-xsquade.onrender.com/"
-  api_docs: "https://bob-ai-hackathod-xsquade.onrender.com/docs"
+  problem_statement: >
+    Modern enterprise Security Operations Centers (SOC) are overwhelmed by alert fatigue, processing thousands of disconnected security logs daily. Tier-1 analysts struggle to detect correlated multi-stage attack campaigns, synthesize threat intelligence, and take rapid containment actions before data exfiltration occurs.
 
-tech_stack:
-  backend:
-    framework: "FastAPI"
-    language: "Python 3.10+"
-    orm: "SQLAlchemy 2.0"
-    validation: "Pydantic v2"
-    database: "SQLite"
-  frontend:
-    framework: "React 19"
-    tooling: "Vite"
-    language: "TypeScript"
-    styling: "Tailwind CSS"
-    charts: "Recharts"
-    icons: "Lucide React"
-  ai_provider:
-    architecture: "Pluggable AIProvider Layer"
-    offline_provider: "MockAIProvider (Zero-Key, Deterministic)"
-    online_provider: "OpenAICompatibleProvider (Ollama, vLLM, Groq, OpenAI)"
+  solution_summary: >
+    CyberSentinel is an autonomous AI-powered SOC analyst that ingests and correlates telemetry events into high-fidelity incidents, computes dynamic MITRE ATT&CK risk scores, generates automated forensic root-cause investigations, and enables single-click defensive response playbooks.
 
-repository_structure:
-  src:
-    backend: "src/backend"
-    frontend: "src/frontend"
-    shared: "src/shared"
-  docs: "docs"
-  demo: "demo"
-  presentation: "presentation"
+  key_features:
+    - "Multi-Stage Attack Correlation & MITRE ATT&CK Matrix Mapping"
+    - "Autonomous AI Forensic Investigation & Root Cause Synthesis"
+    - "Interactive SOC AI Chat Assistant with Live Telemetry Context"
+    - "Real-time Attack Simulation Sandbox (Brute Force, Lateral Movement, Data Exfiltration)"
+    - "Automated Incident Risk Scoring & One-Click Containment Playbooks"
+
+  tech_stack:
+    languages: ["Python", "TypeScript"]
+    frameworks: ["FastAPI", "React", "Tailwind CSS", "Vite"]
+    ibm_technologies: ["watsonx.ai", "IBM Bob"]
+    databases: ["SQLite", "SQLAlchemy"]
+    other: ["Docker", "Uvicorn", "Recharts", "Lucide React"]
+
+  what_we_are_most_proud_of: >
+    The end-to-end incident response lifecycle: from simulating live multi-vector attacks in the sandbox, to sub-second correlation, AI-driven root-cause synthesis with MITRE ATT&CK mapping, and instant containment execution directly through an intuitive Command Center.
+
+  known_limitations: >
+    Currently relies on simulated telemetry and standard SIEM schema formats. Real-world enterprise deployment would integrate continuous Kafka streaming and bidirectional integrations with commercial EDRs like CrowdStrike and Microsoft Sentinel.
+
+# =============================================================================
+# ARTIFACT LOCATIONS
+# These paths are relative to the repo root. Only change if you moved files.
+# =============================================================================
+artifacts:
+  source_code: "src/"
+  setup_guide: "docs/setup-guide.md"
+  architecture_doc: "docs/architecture.md"
+  demo_video: "demo/demo-video-link.txt"   # URL to hosted video (YouTube, Loom, Box)
+  live_demo: "demo/live-demo-url.txt"      # URL to deployed demo (optional)
+  screenshots: "demo/screenshots/"
+  presentation: "presentation/"

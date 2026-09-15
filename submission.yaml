@@ -13,12 +13,14 @@ team:
   track: "AI"
   lead:
     name: "jenil Sakhiya"
-    email: "25ce104@charusar.edu.in"
+    email: "25ce104@charusat.edu.in"
   members:
     - name: "Daksh Patel"
-      email: "25dce035@charusar.edu.in"
+      email: "25dce035@charusat.edu.in"
     - name: "yug kansagra"
-      email: "d26dce141@charusar.edu.in"
+      email: "d26dce141@charusat.edu.in"
+    - name: "Jenil Sakhiya"
+      email: "25it004@charusat.edu.in"
     
 submission:
   title: "CyberSentinel"
